@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.pavelzol</groupId>
-    <artifactId>dispatcher-core</artifactId>
+    <groupId>io.easycqrs</groupId>
+    <artifactId>core</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>dispatcher-core</name>
-    <description>Core dispatcher library for Java-based projects.</description>
-    <url>https://github.com/PavelZol/dispatcher-core</url>
+    <name>core</name>
+    <description>Core CQRS library for Java-based projects.</description>
+    <url>https://github.com/easycqrs/core</url>
 
     <licenses>
         <license>
