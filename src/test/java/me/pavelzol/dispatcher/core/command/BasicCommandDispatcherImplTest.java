@@ -1,5 +1,10 @@
-package me.pavelzol.dispatcher.core.dispatcher.basic;
+package me.pavelzol.dispatcher.core.command;
 
+import me.pavelzol.dispatcher.core.command.first.DuplicateFirstCommandHandler;
+import me.pavelzol.dispatcher.core.command.first.FirstCommand;
+import me.pavelzol.dispatcher.core.command.first.FirstCommandHandler;
+import me.pavelzol.dispatcher.core.command.second.SecondCommand;
+import me.pavelzol.dispatcher.core.command.second.SecondCommandHandler;
 import me.pavelzol.dispatcher.core.dispatcher.BasicCommandDispatcherImpl;
 import me.pavelzol.dispatcher.core.dispatcher.CommandDispatcher;
 import org.junit.jupiter.api.Test;
@@ -38,7 +43,7 @@ class BasicCommandDispatcherImplTest {
         );
 
         assertEquals(
-            "Duplicate command handler for command type: me.pavelzol.dispatcher.core.dispatcher.basic.FirstCommand",
+            "Duplicate command handler for command type: me.pavelzol.dispatcher.core.command.first.FirstCommand",
             exception.getMessage()
         );
     }
@@ -53,7 +58,7 @@ class BasicCommandDispatcherImplTest {
         );
 
         assertEquals(
-            "No command handler registered for command type: me.pavelzol.dispatcher.core.dispatcher.basic.FirstCommand",
+            "No command handler registered for command type: me.pavelzol.dispatcher.core.command.first.FirstCommand",
             exception.getMessage()
         );
     }
@@ -75,7 +80,7 @@ class BasicCommandDispatcherImplTest {
 
         assertEquals(List.of("first:foo"), handledCommands);
         assertEquals(
-            "No command handler registered for command type: me.pavelzol.dispatcher.core.dispatcher.basic.SecondCommand",
+            "No command handler registered for command type: me.pavelzol.dispatcher.core.command.second.SecondCommand",
             exception.getMessage()
         );
     }

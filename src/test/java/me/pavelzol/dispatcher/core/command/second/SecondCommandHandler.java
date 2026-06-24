@@ -1,13 +1,13 @@
-package me.pavelzol.dispatcher.core.dispatcher.basic;
+package me.pavelzol.dispatcher.core.command.second;
 
 import me.pavelzol.dispatcher.core.api.CommandHandler;
 
 import java.util.List;
 
-final class SecondCommandHandler implements CommandHandler<SecondCommand> {
+public final class SecondCommandHandler implements CommandHandler<SecondCommand> {
     private final List<String> handledCommands;
 
-    SecondCommandHandler(List<String> handledCommands) {
+    public SecondCommandHandler(List<String> handledCommands) {
         this.handledCommands = handledCommands;
     }
 
