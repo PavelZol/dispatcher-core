@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.easycqrs</groupId>
-    <artifactId>core</artifactId>
+    <artifactId>dispatchers</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>core</name>
+    <name>dispatchers</name>
     <description>Core CQRS library for Java-based projects.</description>
 
     <licenses>
