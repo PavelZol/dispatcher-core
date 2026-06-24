@@ -1,5 +1,6 @@
 package me.pavelzol.dispatcher.core.dispatcher;
 
+import me.pavelzol.dispatcher.core.api.Query;
 import me.pavelzol.dispatcher.core.api.QueryHandler;
 
 import java.util.HashMap;
@@ -18,7 +19,7 @@ public final class BasicQueryDispatcherImpl implements QueryDispatcher {
     }
 
     @Override
-    public <Q, R> R dispatch(Q query) {
+    public <R> R dispatch(Query<R> query) {
         Objects.requireNonNull(query, "query must not be null");
 
         Class<?> queryType = query.getClass();
@@ -33,8 +34,8 @@ public final class BasicQueryDispatcherImpl implements QueryDispatcher {
     }
 
     @SuppressWarnings("unchecked")
-    private static <Q, R> R handle(QueryHandler<?, ?> queryHandler, Q query) {
-        return ((QueryHandler<Q, R>) queryHandler).handle(query);
+    private static <Q extends Query<R>, R> R handle(QueryHandler<?, ?> queryHandler, Query<R> query) {
+        return ((QueryHandler<Q, R>) queryHandler).handle((Q) query);
     }
 
     public static final class Builder {
@@ -43,7 +44,10 @@ public final class BasicQueryDispatcherImpl implements QueryDispatcher {
         private Builder() {
         }
 
-        public <Q, R> Builder register(Class<Q> queryType, QueryHandler<? super Q, ? extends R> queryHandler) {
+        public <Q extends Query<R>, R> Builder register(
+            Class<Q> queryType,
+            QueryHandler<? super Q, ? extends R> queryHandler
+        ) {
             Objects.requireNonNull(queryType, "queryType must not be null");
             Objects.requireNonNull(queryHandler, "queryHandler must not be null");
 

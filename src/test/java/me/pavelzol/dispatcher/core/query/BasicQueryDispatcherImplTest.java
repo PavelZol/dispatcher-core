@@ -19,6 +19,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BasicQueryDispatcherImplTest {
 
@@ -47,7 +48,7 @@ class BasicQueryDispatcherImplTest {
             userProfile
         );
         assertEquals(42, userSettings.getUserId());
-        assertEquals(true, userSettings.isNotificationsEnabled());
+        assertTrue(userSettings.isNotificationsEnabled());
         assertEquals("dark", userSettings.getTheme());
     }
 
