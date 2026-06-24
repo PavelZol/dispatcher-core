@@ -1,6 +1,4 @@
-package io.easycqrs.core.dispatcher;
-
-import io.easycqrs.core.api.Query;
+package io.easycqrs.query;
 
 public interface QueryDispatcher {
     <R> R dispatch(Query<R> query);

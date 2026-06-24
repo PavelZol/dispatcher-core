@@ -1,6 +1,6 @@
 package io.easycqrs.core.command.second;
 
-import io.easycqrs.core.api.CommandHandler;
+import io.easycqrs.command.CommandHandler;
 
 import java.util.List;
 

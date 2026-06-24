@@ -1,4 +1,4 @@
-package io.easycqrs.core.dispatcher;
+package io.easycqrs.command;
 
 public interface CommandDispatcher {
     <T> void dispatch(T command);

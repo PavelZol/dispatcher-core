@@ -1,7 +1,8 @@
-package io.easycqrs.core.dispatcher;
+package io.easycqrs.query.impl;
 
-import io.easycqrs.core.api.Query;
-import io.easycqrs.core.api.QueryHandler;
+import io.easycqrs.query.Query;
+import io.easycqrs.query.QueryDispatcher;
+import io.easycqrs.query.QueryHandler;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -5,8 +5,8 @@ import io.easycqrs.core.command.first.FirstCommand;
 import io.easycqrs.core.command.first.FirstCommandHandler;
 import io.easycqrs.core.command.second.SecondCommand;
 import io.easycqrs.core.command.second.SecondCommandHandler;
-import io.easycqrs.core.dispatcher.DefaultCommandDispatcher;
-import io.easycqrs.core.dispatcher.CommandDispatcher;
+import io.easycqrs.command.impl.DefaultCommandDispatcher;
+import io.easycqrs.command.CommandDispatcher;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

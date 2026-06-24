@@ -1,6 +1,6 @@
 package io.easycqrs.core.query.finduserprofile;
 
-import io.easycqrs.core.api.QueryHandler;
+import io.easycqrs.query.QueryHandler;
 
 public final class FindUserProfileQueryHandler implements QueryHandler<FindUserProfileQuery, FindUserProfileResponse> {
 

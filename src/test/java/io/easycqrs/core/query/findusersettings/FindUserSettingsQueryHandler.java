@@ -1,6 +1,6 @@
 package io.easycqrs.core.query.findusersettings;
 
-import io.easycqrs.core.api.QueryHandler;
+import io.easycqrs.query.QueryHandler;
 
 public final class FindUserSettingsQueryHandler implements QueryHandler<FindUserSettingsQuery, FindUserSettingsResponse> {
 

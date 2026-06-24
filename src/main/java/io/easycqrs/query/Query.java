@@ -1,4 +1,4 @@
-package io.easycqrs.core.api;
+package io.easycqrs.query;
 
 public interface Query<R> {
 }

@@ -1,6 +1,6 @@
 package io.easycqrs.core.query.findusername;
 
-import io.easycqrs.core.api.QueryHandler;
+import io.easycqrs.query.QueryHandler;
 
 public final class FindUserNameQueryHandler implements QueryHandler<FindUserNameQuery, String> {
 

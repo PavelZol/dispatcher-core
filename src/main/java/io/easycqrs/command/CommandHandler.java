@@ -1,4 +1,4 @@
-package io.easycqrs.core.api;
+package io.easycqrs.command;
 
 @FunctionalInterface
 public interface CommandHandler<T> {

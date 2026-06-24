@@ -1,4 +1,4 @@
-package io.easycqrs.core.api;
+package io.easycqrs.query;
 
 @FunctionalInterface
 public interface QueryHandler<Q extends Query<R>, R> {

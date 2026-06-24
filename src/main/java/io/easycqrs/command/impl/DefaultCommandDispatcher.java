@@ -1,6 +1,7 @@
-package io.easycqrs.core.dispatcher;
+package io.easycqrs.command.impl;
 
-import io.easycqrs.core.api.CommandHandler;
+import io.easycqrs.command.CommandDispatcher;
+import io.easycqrs.command.CommandHandler;
 
 import java.util.HashMap;
 import java.util.Map;

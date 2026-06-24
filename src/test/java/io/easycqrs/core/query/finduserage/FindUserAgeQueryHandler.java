@@ -1,6 +1,6 @@
 package io.easycqrs.core.query.finduserage;
 
-import io.easycqrs.core.api.QueryHandler;
+import io.easycqrs.query.QueryHandler;
 
 public final class FindUserAgeQueryHandler implements QueryHandler<FindUserAgeQuery, Integer> {
 

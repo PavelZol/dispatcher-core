@@ -1,7 +1,7 @@
 package io.easycqrs.core.query;
 
-import io.easycqrs.core.dispatcher.DefaultQueryDispatcher;
-import io.easycqrs.core.dispatcher.QueryDispatcher;
+import io.easycqrs.query.impl.DefaultQueryDispatcher;
+import io.easycqrs.query.QueryDispatcher;
 import io.easycqrs.core.query.finduserage.FindUserAgeQuery;
 import io.easycqrs.core.query.finduserage.FindUserAgeQueryHandler;
 import io.easycqrs.core.query.findusername.DuplicateFindUserNameQueryHandler;
